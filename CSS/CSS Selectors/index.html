@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CSS Selectors</title>
+    <style>
+        /* Element Selector */
+        h1{
+            color: blueviolet;
+            background-color: rgb(153, 187, 220);
+        }
+        /* Class Selector */
+        .Orange{
+            color: #e19d0d;
+            background-color: rgb(125, 71, 71);
+        }
+        /* ID Selector */
+        #Green{
+            color: rgb(67, 109, 67);
+            background-color: burlywood;
+        }
+        /* Child Selector */
+        div > p{
+            background-color: rgb(104, 160, 162);
+        }
+        /* Descendant Selector */
+        div p{
+            background-color: rgb(117, 197, 200);
+        }
+        /* Universal Selector */
+        * {
+            margin-left: 1.5mm;
+            margin-right: 2.5mm;
+            padding: 0mm;
+        }
+        /* Pseudo Selector */
+        a:visited{
+            color: chocolate;
+        }
+        a:link{
+            color: rgb(16, 228, 154);
+        }
+        a:active{
+            background-color: blue;
+        }
+        a:hover{
+            background-color: chartreuse;
+        }
+        div:first-child{
+            background-color: rgb(24, 126, 214);
+        }
+    </style>
+</head>
+<body>
+    <main class="one">
+        <div>I am first.</div>
+        <div>I am Second.</div>
+    </main>
+    <h1>Types of CSS selector</h1>
+    <div class="Orange">
+        Lorem ipsum, dolor sit amet consectetur adipisicing elit. Facere totam, modi asperiores quaerat incidunt tempora accusamus optio fugiat vitae quae eveniet obcaecati rerum libero iure quos dolor esse ex? Quaerat.
+    </div>
+    &nbsp;
+    <div id="Green">
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Architecto rerum, repellendus omnis cumque culpa iste voluptate dicta porro quasi quia blanditiis veniam. Minus, rem voluptatum nesciunt nobis laudantium odio. Repellendus facere quis perspiciatis quasi soluta?
+    <p>
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Nobis fugiat, consectetur cumque dicta quae maxime, reprehenderit saepe, veniam iusto ipsam obcaecati a ad delectus necessitatibus iste molestias! Corporis, ipsa nesciunt quaerat explicabo, nemo, soluta aliquid error dolor vero alias praesentium. Natus eligendi perspiciatis hic eveniet!
+    </p>
+    </div>
+    <a href="https://www.Mintra.com" target="_blank">Go to Mintra</a>
+    <a href="https://www.youtube.com" target="_blank">Go to Youtube</a>
+    <a href="https://www.Shopify.com" target="_blank">Go to Shopify</a>
+</body>
+</html>
