@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CSS Specificity</title>
+    <style>
+        /* specificity is 1 */
+        h1 {
+            color: red;
+        }
+
+        /* specificity is 10 */
+        .cgreen {
+            color: green;
+        }
+
+        /* specificity is 10 */
+        .cyellow {
+            color: yellow;
+        }
+
+        /* specificity is 10 */
+        h1.cpurple {
+            color: purple;
+        }
+
+        /* specificity is 10 */
+        [data-x=a] {
+            color: blueviolet;
+        }
+
+        a.harryclass.rohan-class[href]:hover {
+            color: magenta;
+        }
+
+        a.link:hover{
+            background-color: beige;
+        }
+    </style>
+</head>
+
+<body>
+        <h1 class="cyellow cpurple cgreen" data-x="a">This is about specificity.</h1>
+        <a class="harryclass rohan-class link" href="https://www.google.com">Go to Google</a>
+</body>
+
+</html>

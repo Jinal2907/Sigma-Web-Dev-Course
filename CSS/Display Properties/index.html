@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CSS Display Properties</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+        }
+
+        .box {
+            border: 2px solid black;
+            border-width: 3px;
+            border-radius: 20px;
+            outline: 2px dashed #630889;
+            outline-offset: 5px;
+            display: inline-block;
+            padding: 30px;
+            margin: 40px;
+            width: 250px;
+            box-sizing: border-box;
+            display: inline-flex;
+            justify-content: center;
+            box-shadow: 20px 20px 8px gray;
+            /* display: none; */
+            /* visibility: hidden; */
+        }
+
+        .box1 {
+            /* display: none; */
+            /* visibility: hidden; */
+        }
+
+        .text-element {
+            text-shadow: 4px 1px 7px purple;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="box box1">
+        I am a box.
+    </div>
+    <div class="box">
+        I am good.
+    </div>
+    <span>
+        I am another
+    </span>
+    <span>
+        box.
+    </span>
+    <p class="text-element">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Culpa itaque pariatur maxime
+        architecto possimus dolorum optio provident odit quam eligendi nostrum expedita cumque, delectus excepturi in
+        quo illo sunt enim nemo dignissimos deserunt asperiores reiciendis! Cupiditate blanditiis nisi quod recusandae?
+    </p>
+</body>
+
+</html>
