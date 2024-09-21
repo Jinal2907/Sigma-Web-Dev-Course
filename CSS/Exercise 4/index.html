@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Exercise 4</title>
+    <style>
+
+        @media only screen and (max-width:455px){
+            /* :root{
+                --color: purple;
+                --seccolor: rgb(241, 159, 241);
+            } */
+
+            body{
+                background-color: rgb(222, 143, 143);
+            }
+        }
+
+        :root{
+            --color: cadetblue;
+            --seccolor: rgb(131, 64, 90);
+        }
+
+        *{
+            margin: 0;
+            padding: 0;
+        }
+
+        div{
+            background-color: var(--color);
+        }
+
+        .nav{
+            display: flex;
+        }
+
+        ul li{
+            list-style: none;
+            padding: 24px;
+        }
+
+        ul li:first-child{
+            background-color:var(--seccolor);
+        }
+
+        ul li:last-child{
+            display: inline;
+            margin-left: 1080px;
+            background-color: var(--seccolor);
+        }
+    </style>
+</head>
+<body>
+    <div>
+        <ul class="nav">
+            <li>Home</li>
+            <li>About</li>
+            <li>Contact</li>
+            <li>Register</li>
+            <li class="login">login</li>
+        </ul>
+    </div>
+</body>
+</html>
