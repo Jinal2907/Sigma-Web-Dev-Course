@@ -4,7 +4,10 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Exercise 4</title>
+
     <style>
+
+        @import url('https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300..800;1,300..800&display=swap');
 
         @media only screen and (max-width:455px){
             /* :root{
@@ -18,13 +21,21 @@
         }
 
         :root{
-            --color: cadetblue;
-            --seccolor: rgb(131, 64, 90);
+            /* --color: cadetblue; */
+            --color: rgb(6, 24, 89);
+            --seccolor: rgb(94, 112, 167);
+            --fontcolor:white;
         }
 
         *{
             margin: 0;
             padding: 0;
+        }
+
+        body{
+            background-color: var(--seccolor);
+            font-family: "Open Sans", sans-serif;
+            font-weight: bolder;
         }
 
         div{
@@ -33,6 +44,7 @@
 
         .nav{
             display: flex;
+            color: var(--fontcolor);
         }
 
         ul li{
@@ -40,25 +52,30 @@
             padding: 24px;
         }
 
+        ul li a{
+            color: var(--fontcolor);
+            text-decoration: none;
+        }
+
         ul li:first-child{
-            background-color:var(--seccolor);
+            background-color:var(--color);
         }
 
         ul li:last-child{
             display: inline;
-            margin-left: 1080px;
-            background-color: var(--seccolor);
+            margin-left: 1030px;
+            background-color: var(--color);
         }
     </style>
 </head>
 <body>
     <div>
         <ul class="nav">
-            <li>Home</li>
-            <li>About</li>
-            <li>Contact</li>
-            <li>Register</li>
-            <li class="login">login</li>
+            <li><a href="/">Home</a></li>
+            <li><a href="/">About</a></li>
+            <li><a href="/">Contact</a></li>
+            <li><a href="/">Register</a></li>
+            <li class="login"><a href="/">login</a></li>
         </ul>
     </div>
 </body>

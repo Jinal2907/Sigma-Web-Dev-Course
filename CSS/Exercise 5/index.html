@@ -1,0 +1,139 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@24,400,0,0" />
+    <title>Layout</title>
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+        * {
+            margin: 0;
+            padding: 0;
+        }
+
+        body{
+            font-family: "Poppins", sans-serif;
+        }
+
+        .nav {
+            background-color: rgb(5, 5, 98);
+            color: white;
+            position: sticky;
+            top: 0;
+            /* z-index: 1000; */
+        }
+
+        nav ul {
+            display: flex;
+        }
+
+        nav ul li {
+            list-style: none;
+            padding: 25px;
+        }
+
+        nav ul li a{
+            color: white;
+            text-decoration: none;
+        }
+
+        .box {
+            border: 2px solid black;
+            /* margin-top: 40px; */
+            margin: auto;
+            width: 500px;
+            height: 480px;
+            margin-bottom: 30px;
+            text-align: center;
+        }
+
+        .box1 {
+            background-color: aquamarine;
+            /* margin-left: 160px; */
+            margin-top: 40px;
+
+        }
+
+        .box2 {
+            background-color: aqua;
+            margin-top: 40px;
+            /* margin-left: 40px; */
+            /* margin-right: 160px; */
+        }
+
+        .boxes {
+            display: flex;
+            background-color: bisque;
+        }
+
+        .box3 {
+            background-color: rgb(211, 134, 134);
+            width: 1020px;
+            height: 200px;
+            padding: 20px;
+            margin: auto;
+            margin-top: 30px;
+            margin-bottom: 30px;
+            border-radius: 70px;
+            text-align:center;
+            overflow:hidden;
+            font-size: 16px;
+
+        }
+
+        footer {
+            background-color: blue;
+            width: 1520px;
+            height: 40px;
+        }
+
+        .material-symbols-outlined{
+            margin-left: 1460px;
+            /* float: right; */
+            font-size: 50px;
+            position: fixed;
+        }
+    </style>
+</head>
+
+<body>
+    <nav class="nav">
+        <ul>
+            <li><a href="/">Home</a></li>
+            <li><a href="/">About</a></li>
+            <li><a href="/">Services</a></li>
+            <li><a href="/">Contact</a></li>
+        </ul>
+    </nav>
+
+    <div class="boxes">
+        <div class="box1 box">
+            Lorem ipsum dolor sit amet consectetur, adipisicing elit. Facere blanditiis odio perspiciatis distinctio
+            nemo illo magni fuga cumque ipsum soluta praesentium repudiandae eum, suscipit veritatis animi accusamus
+            deserunt eligendi architecto commodi dolorum maiores debitis adipisci.
+        </div>
+        <div class="box2 box">
+            Lorem ipsum dolor sit amet consectetur, adipisicing elit. Iure earum corporis sed dolorem omnis explicabo
+            sequi animi, recusandae consequatur expedita quos nulla architecto distinctio dolores inventore deserunt
+            officia sunt? Pariatur ex exercitationem ipsam culpa voluptatem.
+        </div>
+    </div>
+
+    <span class="material-symbols-outlined">home</span>
+
+    <div class="box3">
+        Lorem ipsum dolor sit amet consectetur, adipisicing elit. At nemo aspernatur blanditiis quasi voluptate aut
+        corporis, ducimus doloribus commodi totam, minima facere dignissimos necessitatibus inventore!
+    </div>
+
+    <footer>
+        <div class="footer">
+            @copyright:All right reserved.
+        </div>
+    </footer>
+</body>
+
+</html>
